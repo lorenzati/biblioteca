@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "e462a545-40f8-4707-9eae-f6bfae873f9e",
+		"name": "Libros API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19719379"
+	},
+	"item": [
+		{
+			"name": "Libros Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/librosApi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"librosApi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Libros Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/librosApi/9",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"librosApi",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Libros Store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"titulo\": \"voluptates12\",\r\n    \"descripcion\": \"Publicidad para la marca 2\",\r\n    \"cantidad_paginas\": 17,\r\n    \"autor\": \"Marianna Alguna 2\",\r\n    \"editorial\": \"no sea\",\r\n    \"fecha_publicacion\": \"2022-08-16\",\r\n    \"activa\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/librosApi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"librosApi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Libros Store Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"titulo\": \"voluptates12\",\r\n    \"descripcion\": \"descripcion demo 3\",\r\n    \"cantidad_paginas\": 17,\r\n    \"autor\": \"Marianna Alguna 2\",\r\n    \"editorial\": \"no sea\",\r\n    \"fecha_publicacion\": \"2022-08-16\",\r\n    \"activa\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/librosApi/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"librosApi",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Libros Delete/Restore",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/librosApi/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"librosApi",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
